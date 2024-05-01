@@ -1,0 +1,29 @@
+.example-container {
+  width: auto;
+  height: 100vh; /* Ajusta la altura al 100% de la altura de la ventana */
+  margin: 0;
+  border: none;
+  background: #eee;
+}
+
+mat-sidenav {
+  width: 280px; /* Establece el ancho del sidenav a 300px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-sidenav button {
+  display: block; /* Hace que los botones se muestren en bloques, uno debajo del otro */
+  margin: 20px auto; /* Añade un margen superior e inferior de 20px y centra los botones horizontalmente */
+  width: 80%;
+  height: 50px;
+}
+
+.first-button{
+  margin-top: auto;
+}
+.last-button{
+  margin-bottom: auto;
+}

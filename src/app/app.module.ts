@@ -14,7 +14,8 @@ import { EjemploComponent } from './execution/ejemplo/ejemplo.component';
 import { Ejemplo1Component } from './execution/ejemplo-1/ejemplo-1.component';
 
 import {MatCardModule} from "@angular/material/card";
-import {RestaurantListComponent} from "./planning/restaurant-list/restaurant-list.component";
+import {RestaurantListComponent} from "./planning/components/restaurant-list/restaurant-list.component";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import {RestaurantListComponent} from "./planning/restaurant-list/restaurant-lis
     MatDrawerContainer,
     MatDrawer,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync()

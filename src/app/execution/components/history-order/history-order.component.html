@@ -2,8 +2,11 @@
   <div class="container">
     <mat-card class="order" *ngFor="let order of orders">
       <mat-card-content>
-        <li>{{order.name}}</li>
-        <li>{{order.fecha}}</li>
+        <li>Nombre: {{order.name}}</li>
+        <li>Fecha: {{order.fecha}}</li>
+        <li>Type: {{order.type}}</li>
+        <li>TiempoEntrega: {{order.tiempoEntrega}}</li>
+        <li>Estado: {{order.state}}</li>
       </mat-card-content>
     </mat-card>
   </div>

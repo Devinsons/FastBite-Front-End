@@ -1,3 +1,3 @@
 export const environment = {
-  serverBasePath: 'http://localhost:3000'
+  serverBasePath: 'https://api-fake-fastbite.onrender.com'
 };

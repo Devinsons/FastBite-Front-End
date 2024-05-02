@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {RestaurantsService} from "../../services/restaurants.service";
 import {Menu} from "../../model/menu.entity";
 import {ActivatedRoute} from "@angular/router";
-import transformJavaScript from "@angular-devkit/build-angular/src/tools/esbuild/javascript-transformer-worker";
 import {Order} from "../../../execution/model/order.entity";
 import {ExecutionService} from "../../../execution/services/execution.service";
 @Component({
@@ -44,6 +43,4 @@ export class MenuListComponent implements  OnInit{
       console.log("Response", response);
     });
   }
-
-
 }

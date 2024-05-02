@@ -335,37 +335,18 @@
   "orders":[
     {
       "id":1,
-      "entradas":[
-        {
-          "id":1,
-          "name":"Ensalada cesar",
-          "quantity":2
-        },
-        {
-          "id":2,
-          "name":"Arroz chaufa",
-          "quantity":5
-        },
-        {
-          "id":3,
-          "name":"Ceviche",
-          "quantity":18
-        }
-      ],
-      "segundo":[
-        {
-          "id":1,
-          "name":"Lomo saltado",
-          "quantity":1
-        }
-      ],
-      "bebidas":[
-        {
-          "id":1,
-          "name":"Limonada",
-          "quantity":1
-        }
-      ],
+      "name":"Ensalada cesar",
+      "type":"entrada",
+      "tiempoEntrega": "30 minutos",
+      "state":"En preparacion",
+      "fecha":"2023-05-01",
+      "restaurantId":1,
+      "userId":1
+    },
+    {
+      "id":2,
+      "name":"Pollo al horno",
+      "type":"segundo",
       "tiempoEntrega": "30 minutos",
       "state":"En preparacion",
       "fecha":"2023-05-01",

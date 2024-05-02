@@ -12,7 +12,7 @@
       <p>Stock:{{entrada.stock}}</p>
     </mat-card-content>
     <mat-card-actions>
-      <button class="button-color" mat-button>Agregar</button>
+      <button class="button-color" mat-button (click)="onCardClick(entrada)" >Agregar</button>
     </mat-card-actions>
   </mat-card>
 

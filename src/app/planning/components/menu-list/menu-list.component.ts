@@ -29,4 +29,17 @@ export class MenuListComponent implements  OnInit{
       console.log("Menus", this.menus)
     });
   }
+
+
+
+  onCardClick(items:any) {
+    console.log("Menu", items);
+    console.log("Menu Id", items.id);
+    console.log("Menu Name", items.name);
+    console.log("Menu Name", items.category);
+    console.log("Menu Name", items.urlToImage);
+    console.log("Fecha", new Date());
+  }
+
+
 }

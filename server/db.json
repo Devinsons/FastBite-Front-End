@@ -325,11 +325,20 @@
     {
       "id": 1,
       "name" : "Eduardo",
-      "lastname" : "Chero Emé",
+      "lastName" : "Chero Emé",
       "email": "ednoru36598@gmail.com",
       "phone": "998868345",
       "address": "Av. Victor A. Bealaúnde 171, San Isidro",
       "urlToImage": "https://media.licdn.com/dms/image/D4E03AQHlr_xkD0CkNQ/profile-displayphoto-shrink_200_200/0/1684094514729?e=2147483647&v=beta&t=_S8YXbdxvi9EijwB3HCnGkS833IH1n1frXTyXFUFcS4"
+    },
+    {
+      "id": 2,
+      "name" : "Roier",
+      "lastName" : "Mamani chavez",
+      "email": "dragon@gmail.com",
+      "phone": "945459632",
+      "address": "Av. quemaropa, San juan de lurigancho",
+      "urlToImage": "https://www.primor.eu/blog/wp-content/uploads/2023/11/CORTE-PELO-HOMBRE-1140x760.jpg"
     }
   ],
   "orders":[

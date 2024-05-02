@@ -17,7 +17,13 @@ import {MatCardModule} from "@angular/material/card";
 import {RestaurantListComponent} from "./planning/components/restaurant-list/restaurant-list.component";
 import {HttpClientModule} from "@angular/common/http";
 import { MenuListComponent } from './planning/components/menu-list/menu-list.component';
+import { ProfileContentComponent } from './profile/components/profile-content/profile-content.component';
+import { ProfileUpdateComponent } from './profile/pages/profile-update/profile-update.component';
 
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {FormsModule} from '@angular/forms';
+import {MatIcon} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -27,7 +33,9 @@ import { MenuListComponent } from './planning/components/menu-list/menu-list.com
     EjemploComponent,
     Ejemplo1Component,
     RestaurantListComponent,
-    MenuListComponent
+    MenuListComponent,
+    ProfileContentComponent,
+    ProfileUpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +45,11 @@ import { MenuListComponent } from './planning/components/menu-list/menu-list.com
     MatDrawer,
     MatSidenavModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatIcon
   ],
   providers: [
     provideAnimationsAsync()

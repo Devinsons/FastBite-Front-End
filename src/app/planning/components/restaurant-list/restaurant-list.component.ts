@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {RestaurantsService} from "../../services/restaurants.service";
 import {Restaurant} from "../../model/restaurant.entity";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-restaurant-list',
@@ -11,10 +12,10 @@ export class RestaurantListComponent implements OnInit{
 
   restaurants: Restaurant[] = [];
 
-  constructor(private restaurantService: RestaurantsService) {
+  constructor(private restaurantService: RestaurantsService, private router: Router){
   }
   ngOnInit(): void {
-    console.log("Iniciando la plataforma");
+    console.log("Iniciando la plataforma restaurantes");
     this.getAllRestaurants();
     this.getRestaurantById(2);
   }
@@ -22,6 +23,9 @@ export class RestaurantListComponent implements OnInit{
   getAllRestaurants() {
     this.restaurantService.getAll().subscribe((response: any) => {
       console.log("Response", response);
+      this.restaurants = response;
+      console.log("Restaurants", this.restaurants);
+
     });
   }
 
@@ -31,5 +35,8 @@ export class RestaurantListComponent implements OnInit{
     });
   }
 
+  navigateToMenuList(restaurantId: number) {
+    this.router.navigate([`/restaurants/${restaurantId}/menus`]);
+  }
 
 }

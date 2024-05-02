@@ -16,6 +16,7 @@ import { Ejemplo1Component } from './execution/ejemplo-1/ejemplo-1.component';
 import {MatCardModule} from "@angular/material/card";
 import {RestaurantListComponent} from "./planning/components/restaurant-list/restaurant-list.component";
 import {HttpClientModule} from "@angular/common/http";
+import { MenuListComponent } from './planning/components/menu-list/menu-list.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {HttpClientModule} from "@angular/common/http";
     SideNavigatorBarComponent,
     EjemploComponent,
     Ejemplo1Component,
-    RestaurantListComponent
+    RestaurantListComponent,
+    MenuListComponent
   ],
   imports: [
     BrowserModule,

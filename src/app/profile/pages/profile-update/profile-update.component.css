@@ -1,0 +1,49 @@
+.profile-section {
+  background-color: #F9D8D3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-profile {
+  margin-top: 5rem;
+  border-radius: 15px;
+  width: 65%;
+  background-color: #DF7D6F;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  height: 90vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 50px;
+  gap: 5rem;
+}
+
+.example-full-width{
+  width: 85%;
+  gap: 2rem;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 30px;
+  gap: 5rem;
+}
+
+.images img {
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+}

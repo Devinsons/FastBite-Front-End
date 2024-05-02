@@ -1,21 +1,24 @@
-<h1>Eligue entre estos restaurantes</h1>
 
 
-<div class="card-container">
-  <mat-card class="card" *ngFor="let restaurant of restaurants">
-    <mat-card-header class="card-header">
-      <img   mat-card-avatar  mat-card-image [src]="restaurant.urlToImage" [alt]="restaurant.name">
-    </mat-card-header>
-    <mat-card-title class="card-titulo">{{restaurant.name}}</mat-card-title>
-    <mat-card-subtitle class="card-titulo"> Restaurants</mat-card-subtitle>
-    <mat-card-content>
-      <p>Direccion:{{restaurant.address}}</p>
-      <p>Phone:{{restaurant.phone}}</p>
-      <p> Email: {{restaurant.email}}</p>
-      <p> Horario: {{restaurant.schedule}}</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button class="button-color" mat-button (click)="navigateToMenuList(restaurant.id)" >Selecionar</button>
-    </mat-card-actions>
-  </mat-card>
+<div class="section">
+  <div class="card-container">
+    <h1 style="font-size: 2rem; font-weight: bold">Restaurants</h1>
+    <mat-card class="card" *ngFor="let restaurant of restaurants">
+      <mat-card-content class="card-content">
+        <img   mat-card-avatar  mat-card-image [src]="restaurant.urlToImage" [alt]="restaurant.name">
+        <div class="card-data">
+          <mat-card-title class="card-titulo">{{restaurant.name}}</mat-card-title>
+          <p>Direccion:{{restaurant.address}}</p>
+          <p>Phone:{{restaurant.phone}}</p>
+          <p> Email: {{restaurant.email}}</p>
+          <p> Horario: {{restaurant.schedule}}</p>
+          <mat-card-actions>
+            <button class="button-color" mat-button (click)="navigateToMenuList(restaurant.id)" >Selecionar</button>
+          </mat-card-actions>
+        </div>
+
+      </mat-card-content>
+
+    </mat-card>
+  </div>
 </div>

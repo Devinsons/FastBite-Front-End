@@ -1,22 +1,27 @@
-<h2 mat-dialog-title>Tarjeta Debito /Credito</h2>
-<mat-dialog-content class="mat-typography">
-    <mat-form-field>
-      <input matInput placeholder="Numero de tarjeta">
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput placeholder="Fecha de expiracion">
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput placeholder="Codigo de seguridad">
-    </mat-form-field>
-  <mat-form-field>
-    <input matInput placeholder="Nombres">
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput placeholder="Apellidos">
-  </mat-form-field>
-</mat-dialog-content>
-<mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button (click)="navigateToPlanSubscription()" >Ingresar</button>
-</mat-dialog-actions>
+<div class="dialog-container">
+  <h2 mat-dialog-title>Tarjeta Debito /Credito</h2>
+  <mat-dialog-content class="mat-typography">
+      <p><mat-form-field class="form-width">
+        <input matInput placeholder="Numero de tarjeta">
+      </mat-form-field></p>
+      <table style="width: 100%;"><tr>
+        <td><mat-form-field class="form-width">
+          <input matInput placeholder="Fecha de expiracion">
+        </mat-form-field></td>
+        <td><mat-form-field class="form-width">
+          <input matInput placeholder="Codigo de seguridad">
+        </mat-form-field ></td></tr>
+        <tr><td>
+          <mat-form-field class="form-width">
+            <input matInput placeholder="Nombres">
+          </mat-form-field></td>
+          <td><mat-form-field class="form-width">
+            <input matInput placeholder="Apellidos">
+          </mat-form-field></td><tr>
+        </table>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button (click)="navigateToPlanSubscription()" >Ingresar</button>
+  </mat-dialog-actions>
+</div>

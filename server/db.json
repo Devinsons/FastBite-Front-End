@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Aji Fusion",
-      "email":"ajifusion202@gmail.com",
+      "email": "ajifusion202@gmail.com",
       "phone": "980284781",
       "address": "Calle Grau Mz J, Pachacamac 123",
       "schedule": "12:00 am - 6:00 pm",
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "name": "Brasas Restaurant",
-      "email":"brasas@gmail.com",
+      "email": "brasas@gmail.com",
       "phone": "980284723",
       "address": "Calle Bolognesi Mz J, Pachacamac 321",
       "schedule": "12:00 am - 6:00 pm",
@@ -21,7 +21,7 @@
     {
       "id": 3,
       "name": "Chifa Restaurant",
-      "email":"chifon@gmail.com",
+      "email": "chifon@gmail.com",
       "phone": "980284314",
       "address": "Calle Shin Wu Mz J, Pachacamac 123",
       "schedule": "8:00 am - 9:00 pm",
@@ -30,7 +30,7 @@
     {
       "id": 4,
       "name": "Entre Panes",
-      "email":"entrepanes@gmail.com",
+      "email": "entrepanes@gmail.com",
       "phone": "980245614",
       "address": "Calle pequeño, Miraflores",
       "schedule": "8:00 am - 6:00 pm",
@@ -39,7 +39,7 @@
     {
       "id": 5,
       "name": "Tia Veneno",
-      "email":"tiaveneno@gmail.com",
+      "email": "tiaveneno@gmail.com",
       "phone": "940245614",
       "address": "San juan de lurigancho",
       "schedule": "8:00 am - 6:00 pm",
@@ -55,14 +55,14 @@
           "name": "Ensalada cesar",
           "category": "Saludable",
           "stock": 70,
-          "urlToImage":"https://saboreaunohoy.com/wp-content/uploads/Love-One-Today-featured-avocado-recipe-Springtime-Cobb-Salad-with-Avocado-Dijon-Dressing.jpg"
+          "urlToImage": "https://saboreaunohoy.com/wp-content/uploads/Love-One-Today-featured-avocado-recipe-Springtime-Cobb-Salad-with-Avocado-Dijon-Dressing.jpg"
         },
         {
           "id": 2,
           "name": "Ceviche",
           "category": "Saludable",
           "stock": 40,
-          "urlToImage":"https://cdn0.recetasgratis.net/es/posts/7/4/1/ceviche_peruano_18147_600_square.jpg"
+          "urlToImage": "https://cdn0.recetasgratis.net/es/posts/7/4/1/ceviche_peruano_18147_600_square.jpg"
         }
       ],
       "segundo": [
@@ -71,14 +71,14 @@
           "name": "Lomo saltado",
           "category": "Normal",
           "stock": 90,
-          "urlToImage":"https://i.ytimg.com/vi/sWXRJbGi6yQ/maxresdefault.jpg"
+          "urlToImage": "https://i.ytimg.com/vi/sWXRJbGi6yQ/maxresdefault.jpg"
         },
         {
           "id": 2,
           "name": "Arroz con pollo",
           "category": "Normal",
           "stock": 110,
-          "urlToImage":"https://i.ytimg.com/vi/H6lgxgEWIs8/maxresdefault.jpg"
+          "urlToImage": "https://i.ytimg.com/vi/H6lgxgEWIs8/maxresdefault.jpg"
         }
       ],
       "bebidas": [
@@ -87,7 +87,7 @@
           "name": "Limonada",
           "category": "Saludable",
           "stock": 70,
-          "urlToImage":"https://www.ahorrarnuncafuetanbueno.com.pe/wp-content/uploads/2022/02/Limonada_frozen_912x700.jpg"
+          "urlToImage": "https://www.ahorrarnuncafuetanbueno.com.pe/wp-content/uploads/2022/02/Limonada_frozen_912x700.jpg"
         }
       ],
       "restaurantId": 1
@@ -100,14 +100,14 @@
           "name": "Sopa de verduras",
           "category": "Saludable",
           "stock": 70,
-          "urlToImage":"https://mejorconsalud.as.com/wp-content/uploads/2018/07/sopa-verduras-1.jpg"
+          "urlToImage": "https://mejorconsalud.as.com/wp-content/uploads/2018/07/sopa-verduras-1.jpg"
         },
         {
           "id": 2,
           "name": "Empanadas de pollo",
           "category": "Normal",
           "stock": 90,
-          "urlToImage":"https://i.ytimg.com/vi/OwxCamJYJWE/maxresdefault.jpg"
+          "urlToImage": "https://i.ytimg.com/vi/OwxCamJYJWE/maxresdefault.jpg"
         }
       ],
       "segundo": [
@@ -116,14 +116,14 @@
           "name": "Pescado a la plancha",
           "category": "Saludable",
           "stock": 80,
-          "urlToImage":"https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/01/como-marinar-pescado-la-plancha.jpg"
+          "urlToImage": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/01/como-marinar-pescado-la-plancha.jpg"
         },
         {
           "id": 2,
           "name": "Pollo al horno",
           "category": "Normal",
           "stock": 40,
-          "urlToImage":"https://imag.bonviveur.com/pollo-asado-al-horno-con-patatas.jpg"
+          "urlToImage": "https://imag.bonviveur.com/pollo-asado-al-horno-con-patatas.jpg"
         }
       ],
       "bebidas": [
@@ -330,9 +330,18 @@
       "phone": "998868345",
       "address": "Av. Victor A. Bealaúnde 171, San Isidro",
       "urlToImage": "https://media.licdn.com/dms/image/D4E03AQHlr_xkD0CkNQ/profile-displayphoto-shrink_200_200/0/1684094514729?e=2147483647&v=beta&t=_S8YXbdxvi9EijwB3HCnGkS833IH1n1frXTyXFUFcS4"
+    },
+    {
+      "id": 2,
+      "name": "renzo",
+      "lastName": "cagon mrd",
+      "email": "chaves@gmail.com",
+      "phone": "999999999",
+      "address": "Av.  mocoso",
+      "urlToImage": "C:\\fakepath\\Captura de pantalla (3).png"
     }
   ],
-  "orders":[
+  "orders": [
     {
       "id":1,
       "name":"Ensalada cesar",

@@ -1,0 +1,42 @@
+<div class="profile-section">
+  <div class="container-profile">
+
+    <div class="form">
+      <h1 style="font-weight: bold; font-size: 3rem;">My Profile</h1>
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Nombre</mat-label>
+          <input matInput placeholder="nombre"  [(ngModel)]="user.name" value="{{user.name}}"  name="name">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="last name"  [(ngModel)]="user.lastName"  value="{{user.lastName}}" name="lastName">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Direccion</mat-label>
+          <input matInput placeholder="direccion" [(ngModel)]="user.address" value="{{user.address}}" name="address" >
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Telephone</mat-label>
+          <span matTextPrefix>+51 &nbsp;</span>
+          <input type="tel" matInput placeholder="555-555-1234" value="{{user.phone}}" [(ngModel)]="user.phone" name="phone" >
+          <mat-icon matSuffix>mode_edit</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput  placeholder="Ex. pat@example.com" value="{{user.email}}" [(ngModel)]="user.email" name="email" >
+        </mat-form-field>
+
+        <button mat-raised-button (click)="updateProfile()" style="height: 55px; width: 100%; background-color: #E74C3C">Guardar</button>
+      </form>
+    </div>
+    <div class="images">
+      <img [src]="uploadedImageSrc" >
+      <input type="file" (change)="onFileSelected($event)" >
+    </div>
+  </div>
+</div>

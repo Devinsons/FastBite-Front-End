@@ -66,6 +66,7 @@ export class FastBiteBaseService<T> {
     return this.http.get<T>(`${this.resourcePath()}/${id}`, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
+
   //ruta de ejemplo  https://api-fake-fastbite.onrender.com/restaurants/2?_embed=menus
   getEmbedResource(id: any, resource: string){
     return this.http.get<T>(`${this.resourcePath()}/${id}/?_embed=${resource}`, this.httpOptions)

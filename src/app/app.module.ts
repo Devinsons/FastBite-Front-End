@@ -14,6 +14,7 @@ import {MatDrawer, MatDrawerContainer} from "@angular/material/sidenav";
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { EjemploComponent } from './execution/ejemplo/ejemplo.component';
 import { Ejemplo1Component } from './execution/ejemplo-1/ejemplo-1.component';
+import {MatIcon} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { Ejemplo1Component } from './execution/ejemplo-1/ejemplo-1.component';
     MatCardModule,
     MatDrawerContainer,
     MatDrawer,
-    MatSidenavModule
+    MatSidenavModule,
+    MatIcon
   ],
   providers: [
     provideAnimationsAsync()

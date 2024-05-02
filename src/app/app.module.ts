@@ -10,24 +10,26 @@ import {MatButton} from "@angular/material/button";
 
 import {MatDrawer, MatDrawerContainer} from "@angular/material/sidenav";
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { EjemploComponent } from './execution/ejemplo/ejemplo.component';
-import { Ejemplo1Component } from './execution/ejemplo-1/ejemplo-1.component';
-
 import {MatCardModule} from "@angular/material/card";
 import {RestaurantListComponent} from "./planning/components/restaurant-list/restaurant-list.component";
 import {HttpClientModule} from "@angular/common/http";
 import { MenuListComponent } from './planning/components/menu-list/menu-list.component';
-
+import {RouterModule} from "@angular/router";
+import {PlanSubscriptionComponent} from "./subscription/pages/plan-subscription/plan-subscription.component";
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogContentComponent } from './subscription/components/dialog-content/dialog-content.component';
+import {MatFormField} from "@angular/material/form-field";
+import {MatInput} from "@angular/material/input";
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterContentComponent,
     SideNavigatorBarComponent,
-    EjemploComponent,
-    Ejemplo1Component,
     RestaurantListComponent,
-    MenuListComponent
+    MenuListComponent,
+    PlanSubscriptionComponent,
+    DialogContentComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,11 @@ import { MenuListComponent } from './planning/components/menu-list/menu-list.com
     MatDrawer,
     MatSidenavModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule,
+    MatDialogModule,
+    MatFormField,
+    MatInput
   ],
   providers: [
     provideAnimationsAsync()

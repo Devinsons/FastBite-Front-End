@@ -1,0 +1,19 @@
+<p>plan-subscription works!</p>
+
+
+<div class="card-container">
+  <mat-card class="card" *ngFor="let subscription of planSubscriptions" >
+    <mat-card-header class="card-header">
+      <img   mat-card-avatar  mat-card-image [src]="subscription.urlToImage" [alt]="subscription.name">
+    </mat-card-header>
+    <mat-card-title class="card-titulo">{{subscription.name}}</mat-card-title>
+    <mat-card-subtitle class="card-titulo"> Restaurants</mat-card-subtitle>
+    <mat-card-content>
+      <p>{{subscription.description}}</p>
+      <p>{{subscription.price}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="openDialog()">Subscribete ahora</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

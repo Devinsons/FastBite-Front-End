@@ -27,4 +27,11 @@ export class ProfileUpdateComponent implements OnInit{
     });
   }
 
+  updateProfile() {
+    let profileToUpdate = this.user;
+    this.profileService.update(this.user.id, profileToUpdate).subscribe(
+      (response : any)=> {
+        console.log("Response", response);
+      });
+  }
 }

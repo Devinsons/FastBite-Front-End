@@ -4,30 +4,31 @@
   <form class="example-form">
     <mat-form-field class="example-full-width">
       <mat-label>Nombre</mat-label>
-      <input matInput placeholder="nombre" value="{{user.name}}">
+      <input matInput placeholder="nombre"  [(ngModel)]="user.name" value="{{user.name}}"  name="name">
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
       <mat-label>Last Name</mat-label>
-      <input matInput placeholder="last name" value="{{user.lastName}}">
+      <input matInput placeholder="last name"  [(ngModel)]="user.lastName"  value="{{user.lastName}}" name="lastName">
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
       <mat-label>Direccion</mat-label>
-      <input matInput placeholder="direccion" value="{{user.address}}">
+      <input matInput placeholder="direccion" [(ngModel)]="user.address" value="{{user.address}}" name="address" >
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
       <mat-label>Telephone</mat-label>
       <span matTextPrefix>+51 &nbsp;</span>
-      <input type="tel" matInput placeholder="555-555-1234" value="{{user.phone}}">
+      <input type="tel" matInput placeholder="555-555-1234" value="{{user.phone}}" [(ngModel)]="user.phone" name="phone" >
       <mat-icon matSuffix>mode_edit</mat-icon>
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
       <mat-label>Email</mat-label>
-      <input type="email" matInput  placeholder="Ex. pat@example.com" value="{{user.email}}">
+      <input type="email" matInput  placeholder="Ex. pat@example.com" value="{{user.email}}" [(ngModel)]="user.email" name="email" >
     </mat-form-field>
-    <button mat-raised-button color="primary">Actualizar</button>
+    <button mat-raised-button color="primary" (click)="updateProfile()" >Actualizar</button>
+
   </form>
 </div>

@@ -306,19 +306,22 @@
       "id": 1,
       "name": "Empresa Pequeña",
       "description": "Este paquete incluye almuerzos destinados para empresas cuyo número de empleados oscila entre 10 y 49 empleados.",
-      "urlToImage": "https://ibb.co/zQZ1Lt9"
+      "urlToImage": "https://i.ibb.co/4NNS9zN/empresa-grande.png",
+      "price": "S/. 12000"
     },
     {
       "id": 2,
       "name": "Empresa Mediana",
       "description": "Este paquete incluye almuerzos destinados para empresas cuyo número de empleados oscila entre 50 y 199 empleados.",
-      "urlToImage": "https://ibb.co/MGdTRyR"
+      "urlToImage": "https://i.ibb.co/ZY9shRh/empresa-mediana.png",
+      "price": "S/. 50000"
     },
     {
       "id": 3,
-      "name": "Empresa Mediana",
+      "name": "Restaurantes",
       "description": "Este paquete incluye almuerzos destinados para empresas cuyo número de empleados es mayor a los 200.",
-      "urlToImage": "https://ibb.co/MNN1WrN"
+      "urlToImage": "https://i.ibb.co/8N9JRQv/empresa-peque-a.png",
+      "price": "S/. 900"
     }
   ],
   "users": [

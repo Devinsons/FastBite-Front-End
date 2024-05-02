@@ -1,48 +1,54 @@
-<h1> Elegue lo que deseas</h1>
+<div class="menus-container">
 
-<h2>Entradas</h2>
-<div class="card-container" *ngFor="let menu of menus">
-  <mat-card class="card" *ngFor="let entrada of menu.entradas">
-    <mat-card-header class="card-header">
-      <img   mat-card-avatar  mat-card-image [src]="entrada.urlToImage" [alt]="entrada.name">
-    </mat-card-header>
-    <mat-card-title class="card-titulo">{{entrada.name}}</mat-card-title>
-    <mat-card-subtitle class="card-titulo">{{entrada.category}}</mat-card-subtitle>
-    <mat-card-content>
-      <p>Stock:{{entrada.stock}}</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button class="button-color" mat-button (click)="onCardClick(entrada)" >Agregar</button>
-    </mat-card-actions>
-  </mat-card>
-
-<h2>Segundo</h2>
-<mat-card class="card" *ngFor="let segundo of menu.segundo">
-  <mat-card-header class="card-header">
-    <img   mat-card-avatar  mat-card-image [src]="segundo.urlToImage" [alt]="segundo.name">
-  </mat-card-header>
-  <mat-card-title class="card-titulo">{{segundo.name}}</mat-card-title>
-  <mat-card-subtitle class="card-titulo">{{segundo.category}}</mat-card-subtitle>
-  <mat-card-content>
-    <p>Stock:{{segundo.stock}}</p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button class="button-color" mat-button (click)="onCardClick(segundo)">Agregar</button>
-  </mat-card-actions>
-</mat-card>
-<h2>Bebida</h2>
-<mat-card class="card" *ngFor="let bebida of menu.bebidas">
-  <mat-card-header class="card-header">
-    <img   mat-card-avatar  mat-card-image [src]="bebida.urlToImage" [alt]="bebida.name">
-  </mat-card-header>
-  <mat-card-title class="card-titulo">{{bebida.name}}</mat-card-title>
-  <mat-card-subtitle class="card-titulo">{{bebida.category}}</mat-card-subtitle>
-  <mat-card-content>
-    <p>Stock:{{bebida.stock}}</p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button class="button-color" mat-button (click)="onCardClick(bebida)">Agregar</button>
-  </mat-card-actions>
-</mat-card>
-
+  <div class="section">
+    <h1> Elegue lo que deseas</h1>
+    <h2 style="font-weight: bold; font-size: 1.5rem; align-self: start; margin-left: 2rem; ">Entradas</h2>
+    <div class="card-container" *ngFor="let menu of menus">
+      <mat-card class="card" *ngFor="let entrada of menu.entradas">
+        <mat-card-header class="card-header">
+          <img   mat-card-avatar  mat-card-image [src]="entrada.urlToImage" [alt]="entrada.name">
+        </mat-card-header>
+        <mat-card-title class="card-titulo">{{entrada.name}}</mat-card-title>
+        <mat-card-subtitle class="card-titulo">{{entrada.category}}</mat-card-subtitle>
+        <mat-card-content>
+          <p>Stock:{{entrada.stock}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button class="button-color" mat-button (click)="onCardClick(entrada)" style="background-color: #E74C3C">Agregar</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <h2 style="font-weight: bold; font-size: 1.5rem; align-self: start; margin-left: 2rem; ">Segundo</h2>
+    <div class="card-container" *ngFor="let menu of menus">
+      <mat-card class="card" *ngFor="let segundo of menu.segundo">
+        <mat-card-header class="card-header">
+          <img   mat-card-avatar  mat-card-image [src]="segundo.urlToImage" [alt]="segundo.name">
+        </mat-card-header>
+        <mat-card-title class="card-titulo">{{segundo.name}}</mat-card-title>
+        <mat-card-subtitle class="card-titulo">{{segundo.category}}</mat-card-subtitle>
+        <mat-card-content>
+          <p>Stock:{{segundo.stock}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button class="button-color" mat-button (click)="onCardClick(segundo)" style="background-color: #E74C3C">Agregar</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <h2 style="font-weight: bold; font-size: 1.5rem; align-self: start; margin-left: 2rem;">Bebida</h2>
+    <div class="card-container" *ngFor="let menu of menus">
+      <mat-card class="card" *ngFor="let bebida of menu.bebidas">
+        <mat-card-header class="card-header">
+          <img   mat-card-avatar  mat-card-image [src]="bebida.urlToImage" [alt]="bebida.name">
+        </mat-card-header>
+        <mat-card-title class="card-titulo">{{bebida.name}}</mat-card-title>
+        <mat-card-subtitle class="card-titulo">{{bebida.category}}</mat-card-subtitle>
+        <mat-card-content>
+          <p>Stock:{{bebida.stock}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button class="button-color"  mat-button (click)="onCardClick(bebida)" style="background-color: #E74C3C">Agregar</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
 </div>

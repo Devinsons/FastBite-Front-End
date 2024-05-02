@@ -1,0 +1,43 @@
+.menus-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9D8D3;
+}
+
+.section {
+  margin-top: 5rem;
+  border-radius: 15px;
+  width: 50%;
+  background-color: #DF7D6F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  color: black;
+  overflow-y: scroll;
+  height: 90vh;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 30px;
+  background-color: #FBB4A9;
+}
+.card-header {
+  justify-content: center;
+}
+
+.card img{
+  width: 40%;
+  height: auto;
+}
+

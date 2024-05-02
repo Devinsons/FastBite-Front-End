@@ -1,12 +1,12 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav mode="side" opened>
-    <button class="first-button" mat-button routerLink="/ejemplo">Home</button>
-    <button mat-button routerLink="/profile">Profile</button>
-    <button mat-button routerLink="/restaurants">Restaurants</button>
-    <button mat-button routerLink="/history">My Orders</button>
-    <button mat-button routerLink="/subscription">Suscription</button>
-    <button mat-button routerLink="/ejemplo1">Notification</button>
-    <button  class="last-button" mat-button routerLink="/ejemplo1">Logout</button>
+    <button class="first-button" mat-button routerLink="/ejemplo"><mat-icon>home</mat-icon>Home</button>
+    <button mat-button routerLink="/profile"><mat-icon>person</mat-icon>Profile</button>
+    <button mat-button routerLink="/restaurants"><mat-icon>storefont</mat-icon>Restaurants</button>
+    <button mat-button routerLink="/history"><mat-icon>inventory</mat-icon>My Orders</button>
+    <button mat-button routerLink="/subscription"><mat-icon>currency_exchange</mat-icon>Suscription</button>
+    <button mat-button routerLink="/ejemplo1"><mat-icon>notifications</mat-icon>Notification</button>
+    <button  class="last-button" mat-button routerLink="/ejemplo1"><mat-icon>logout</mat-icon>Logout</button>
   </mat-sidenav>
   <mat-sidenav-content>
     <router-outlet></router-outlet>

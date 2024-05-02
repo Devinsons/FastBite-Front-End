@@ -1,8 +1,7 @@
 export interface Iorder {
   id:            number;
-  entradas:      Parametro[];
-  segundo:       Parametro[];
-  bebidas:       Parametro[];
+  name:          string;
+  type:          string;
   tiempoEntrega: string;
   state:         string;
   fecha:         Date;
@@ -10,8 +9,3 @@ export interface Iorder {
   userId:        number;
 }
 
-export interface Parametro {
-  id:       number;
-  name:     string;
-  quantity: number;
-}

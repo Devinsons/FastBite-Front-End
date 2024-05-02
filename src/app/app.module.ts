@@ -28,6 +28,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {MatIcon} from "@angular/material/icon";
+import { HistoryOrderComponent } from './execution/components/history-order/history-order.component';
+import { MadeOrderComponent } from './execution/pages/made-order/made-order.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import {MatIcon} from "@angular/material/icon";
     PlanSubscriptionComponent,
     DialogContentComponent,
     ProfileContentComponent,
-    ProfileUpdateComponent
+    ProfileUpdateComponent,
+    HistoryOrderComponent,
+    MadeOrderComponent
   ],
   imports: [
     BrowserModule,

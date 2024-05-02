@@ -4,6 +4,7 @@ import {RestaurantListComponent} from "./planning/components/restaurant-list/res
 import {MenuListComponent} from "./planning/components/menu-list/menu-list.component";
 import {PlanSubscriptionComponent} from "./subscription/pages/plan-subscription/plan-subscription.component";
 import {ProfileUpdateComponent} from "./profile/pages/profile-update/profile-update.component";
+import {MadeOrderComponent} from "./execution/pages/made-order/made-order.component";
 
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'restaurants/:restaurantId/menus',component:MenuListComponent},
   {path:'subscription',component:PlanSubscriptionComponent},
   {path:'profile',component:ProfileUpdateComponent},
+  {path:'history',component:MadeOrderComponent},
   {path:'**',component:MenuListComponent},
   {path:'',redirectTo:'/subscription',pathMatch:'full'}
 ];

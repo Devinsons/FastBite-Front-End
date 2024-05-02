@@ -3,6 +3,8 @@ import {RestaurantsService} from "../../services/restaurants.service";
 import {Menu} from "../../model/menu.entity";
 import {ActivatedRoute} from "@angular/router";
 import transformJavaScript from "@angular-devkit/build-angular/src/tools/esbuild/javascript-transformer-worker";
+import {Order} from "../../../execution/model/order.entity";
+import {ExecutionService} from "../../../execution/services/execution.service";
 @Component({
   selector: 'app-menu-list',
   templateUrl: './menu-list.component.html',
@@ -11,8 +13,9 @@ import transformJavaScript from "@angular-devkit/build-angular/src/tools/esbuild
 export class MenuListComponent implements  OnInit{
 
   menus: Menu[] = [];
+  idOrder: number = 4;
 
-  constructor(private restaurantService: RestaurantsService,private  route:ActivatedRoute) {
+  constructor(private restaurantService: RestaurantsService,private  route:ActivatedRoute, private orderService:ExecutionService) {
 
   }
   ngOnInit(): void {
@@ -33,12 +36,13 @@ export class MenuListComponent implements  OnInit{
 
 
   onCardClick(items:any) {
-    console.log("Menu", items);
-    console.log("Menu Id", items.id);
-    console.log("Menu Name", items.name);
-    console.log("Menu Name", items.category);
-    console.log("Menu Name", items.urlToImage);
-    console.log("Fecha", new Date());
+    this.idOrder = this.idOrder + 1;
+   //quiero crear un objeto y hacer post
+    const order = new Order(this.idOrder, items.name, items.type,"30 min", "En proceso", new Date(), items.restaurantId, 1);
+    console.log("Order", order);
+    this.orderService.create(order).subscribe((response: any) => {
+      console.log("Response", response);
+    });
   }
 
 

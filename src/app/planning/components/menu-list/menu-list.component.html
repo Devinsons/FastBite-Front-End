@@ -27,7 +27,7 @@
     <p>Stock:{{segundo.stock}}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button class="button-color" mat-button>Agregar</button>
+    <button class="button-color" mat-button (click)="onCardClick(segundo)">Agregar</button>
   </mat-card-actions>
 </mat-card>
 <h2>Bebida</h2>
@@ -41,7 +41,7 @@
     <p>Stock:{{bebida.stock}}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button class="button-color" mat-button>Agregar</button>
+    <button class="button-color" mat-button (click)="onCardClick(bebida)">Agregar</button>
   </mat-card-actions>
 </mat-card>
 

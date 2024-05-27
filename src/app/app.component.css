@@ -1,0 +1,17 @@
+.container-toolbar{
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.title{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.end-icon{
+  display: flex;
+  margin-right: 60px;
+  justify-content: flex-end;
+}

@@ -30,6 +30,8 @@ import {FormsModule} from '@angular/forms';
 import {MatIcon} from "@angular/material/icon";
 import { HistoryOrderComponent } from './execution/components/history-order/history-order.component';
 import { MadeOrderComponent } from './execution/pages/made-order/made-order.component';
+import {MatToolbar} from "@angular/material/toolbar";
+import {MatBadgeModule} from "@angular/material/badge";
 
 @NgModule({
   declarations: [
@@ -61,7 +63,9 @@ import { MadeOrderComponent } from './execution/pages/made-order/made-order.comp
     RouterModule,
     MatDialogModule,
     MatFormField,
-    MatInput
+    MatInput,
+    MatToolbar,
+    MatBadgeModule
   ],
   providers: [
     provideAnimationsAsync()

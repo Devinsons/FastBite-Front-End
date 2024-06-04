@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #FBB4A9;
+}
+
+.slider-box{
+  width: 1580px;
+  height: 650px;
+  margin: 0 auto 0;
+  overflow: hidden;
+}
+
+.slider-box ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.slider-box img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+@media(max-width: 991px){
+
+  body{
+    padding: 30px;
+  }
+  .slider-box{
+    width: 340px;
+    height: auto;
+  }
+}
+
+.fondo {
+  background-color: #FBB4A9;
+  padding-bottom: 40px;
+}
+
+.content-box{
+  background-color: #eeeeee;
+  padding: 20px ;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.Planes{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.content-box li {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  background-color: #E74C3C;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.content-box p {
+  text-align: justify;
+  padding: 10px;
+}

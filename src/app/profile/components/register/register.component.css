@@ -1,0 +1,123 @@
+
+
+.top-bar {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Product Sans", sans-serif;
+  color: BLACK;
+  height: 5rem;
+}
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  font-size:  1.75rem;
+}
+.toolbar-middle-space {
+  flex: 1 1 auto;
+}
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-right: 1rem;
+}
+.back-icon {
+  color: black;
+  transform: scale(1.6);
+  transition: background-color 150ms ease;
+  border-radius: 2rem;
+  padding: 0.4rem;
+  margin-left: 1rem;
+}
+.back-icon:hover {
+  cursor: pointer;
+  background-color: #DF7D6F;
+}
+
+.section-body{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Product Sans", sans-serif;
+}
+.container{
+  border-radius: 10px;
+  font-size:25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 1.5rem;
+}
+.content{
+  width: 40rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.information-card {
+  background-color: #d6d6d6;
+  transition: background-color 150ms ease-in-out;
+  font-family: "Product Sans", sans-serif;
+  font-size: 1.25rem;
+}
+.information-card:hover {
+  background-color: #ffffff;
+}
+.label-text {
+  font-size: 1.35rem;
+}
+
+.toggle-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.button_register{
+  padding: 10px 40px 10px 40px;
+  background-color: #FBB4A9;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Product Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+.button_register:hover{
+  background-color: #DF7D6F;
+  transition: 0.5s ease;
+}
+
+
+
+.register-section{
+  background-color: #eeeeee;
+  padding: 20px ;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.mat-form-field {
+  border-radius: 2px;
+}

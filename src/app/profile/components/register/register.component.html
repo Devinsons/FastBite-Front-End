@@ -1,0 +1,63 @@
+<mat-card class="register-section">
+<mat-toolbar class="top-bar">
+  <div class="toolbar-left">
+    <mat-icon class="back-icon" aria-hidden="false" aria-label="Back Icon" (click)="onIconClick()">arrow_back_ios</mat-icon>
+    <span>Register</span>
+  </div>
+
+  <div class="toolbar-middle-space"></div>
+
+  <div class="toolbar-right">
+
+  </div>
+</mat-toolbar>
+
+<div class="section-body">
+  <div class="container">
+    <div class="content">
+      <mat-card class="information-card">
+        <mat-card-content>Registrate en nuestra plataforma para acceder a todos nuestros beneficios</mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <form>
+      <div style="gap: 1.5rem; display: flex; align-content: center; justify-content: center; align-items: center;">
+        <label class="label-text">Registrarse como</label>
+        <div>
+          <mat-button-toggle-group class="toggle-group" name="userType" aria-label="User Type" (change)="onUserTypeChange($event)">
+            <mat-button-toggle value="user">Gerente</mat-button-toggle>
+            <mat-button-toggle value="taxiDriver">Cocinero</mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+      </div>
+
+
+      <label class="label-text">Nombre Completo</label>
+      <mat-form-field style="height: 70px; width: 400px; margin-top: 5px;">
+        <input matInput placeholder="Ingresa tu nombre">
+      </mat-form-field>
+
+      <label class="label-text">Correo</label>
+      <mat-form-field style="height: 70px; width: 400px; margin-top: 5px;">
+        <input matInput placeholder="pat@example.com">
+      </mat-form-field>
+
+      <label class="label-text">Contraseña</label>
+      <mat-form-field style="height: 70px; width: 400px; margin-top: 5px;">
+
+        <input matInput [type]="hide ? 'password' : 'text'" placeholder="SecretPassword">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+
+    </form>
+
+    <button mat-stroked-button (click)="openSnackBar()" class="button_register">Register</button>
+
+  </div>
+</div>
+
+</mat-card>

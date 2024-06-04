@@ -33,6 +33,9 @@ import { MadeOrderComponent } from './execution/pages/made-order/made-order.comp
 import {MatToolbar} from "@angular/material/toolbar";
 import {MatBadgeModule} from "@angular/material/badge";
 import { HomeComponent } from './public/components/home/home.component';
+import { LoginComponent } from './profile/components/login/login.component';
+import { RegisterComponent } from './profile/components/register/register.component';
+
 
 @NgModule({
   declarations: [
@@ -47,7 +50,8 @@ import { HomeComponent } from './public/components/home/home.component';
     ProfileUpdateComponent,
     HistoryOrderComponent,
     MadeOrderComponent,
-    HomeComponent
+    HomeComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -67,7 +71,9 @@ import { HomeComponent } from './public/components/home/home.component';
     MatFormField,
     MatInput,
     MatToolbar,
-    MatBadgeModule
+    MatBadgeModule,
+    LoginComponent,
+    RegisterComponent,
   ],
   providers: [
     provideAnimationsAsync()

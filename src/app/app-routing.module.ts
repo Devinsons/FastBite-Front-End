@@ -6,6 +6,8 @@ import {PlanSubscriptionComponent} from "./subscription/pages/plan-subscription/
 import {ProfileUpdateComponent} from "./profile/pages/profile-update/profile-update.component";
 import {MadeOrderComponent} from "./execution/pages/made-order/made-order.component";
 import {HomeComponent} from "./public/components/home/home.component";
+import {LoginComponent} from "./profile/components/login/login.component";
+import {RegisterComponent} from "./profile/components/register/register.component";
 
 
 const routes: Routes = [
@@ -16,7 +18,9 @@ const routes: Routes = [
   {path:'profile',component:ProfileUpdateComponent},
   {path:'history',component:MadeOrderComponent},
   {path:'home',component:HomeComponent},
-  {path:'**',component:MenuListComponent},
+  {path:'login',component:LoginComponent},
+  {path:'register',component:RegisterComponent},
+  {path:'**',component:HomeComponent},
   {path:'',redirectTo:'/subscription',pathMatch:'full'}
 ];
 

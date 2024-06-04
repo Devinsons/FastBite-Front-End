@@ -32,6 +32,7 @@ import { HistoryOrderComponent } from './execution/components/history-order/hist
 import { MadeOrderComponent } from './execution/pages/made-order/made-order.component';
 import {MatToolbar} from "@angular/material/toolbar";
 import {MatBadgeModule} from "@angular/material/badge";
+import { HomeComponent } from './public/components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import {MatBadgeModule} from "@angular/material/badge";
     ProfileContentComponent,
     ProfileUpdateComponent,
     HistoryOrderComponent,
-    MadeOrderComponent
+    MadeOrderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

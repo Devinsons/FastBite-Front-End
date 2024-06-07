@@ -1,0 +1,10 @@
+:host {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(228, 73, 73, 0.83);
+}
+
+ngx-charts-bar-vertical {
+
+  margin: 0 auto;
+}

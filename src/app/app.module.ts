@@ -32,6 +32,10 @@ import { HistoryOrderComponent } from './execution/components/history-order/hist
 import { MadeOrderComponent } from './execution/pages/made-order/made-order.component';
 import {MatToolbar} from "@angular/material/toolbar";
 import {MatBadgeModule} from "@angular/material/badge";
+import { FavoriteDishComponent } from './dashboard/components/favorite-dish/favorite-dish.component';
+import { ProfitsComponent } from './dashboard/components/profits/profits.component';
+import {NgxChartsModule} from "@swimlane/ngx-charts";
+import { DashboardContentComponent } from './dashboard/pages/dashboard-content/dashboard-content.component';
 
 @NgModule({
   declarations: [
@@ -45,28 +49,32 @@ import {MatBadgeModule} from "@angular/material/badge";
     ProfileContentComponent,
     ProfileUpdateComponent,
     HistoryOrderComponent,
-    MadeOrderComponent
+    MadeOrderComponent,
+    FavoriteDishComponent,
+    ProfitsComponent,
+    DashboardContentComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatButton,
-    MatDrawerContainer,
-    MatDrawer,
-    MatSidenavModule,
-    MatCardModule,
-    HttpClientModule,
-    MatInputModule,
-    MatFormFieldModule,
-    FormsModule,
-    MatIcon,
-    RouterModule,
-    MatDialogModule,
-    MatFormField,
-    MatInput,
-    MatToolbar,
-    MatBadgeModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MatButton,
+        MatDrawerContainer,
+        MatDrawer,
+        MatSidenavModule,
+        MatCardModule,
+        HttpClientModule,
+        MatInputModule,
+        MatFormFieldModule,
+        FormsModule,
+        MatIcon,
+        RouterModule,
+        MatDialogModule,
+        MatFormField,
+        MatInput,
+        MatToolbar,
+        MatBadgeModule,
+        NgxChartsModule
+    ],
   providers: [
     provideAnimationsAsync()
   ],

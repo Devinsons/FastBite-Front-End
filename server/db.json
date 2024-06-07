@@ -364,5 +364,68 @@
       "restaurantId":1,
       "userId":1
     }
+  ],
+
+  "segundos": [
+    {
+      "id": 1,
+      "name": "Lomo saltado",
+      "precio": 15,
+      "costo": 8
+    },
+    {
+      "id": 2,
+      "name": "Arroz con pollo",
+      "precio": 12,
+      "costo": 6
+    },
+    {
+      "id": 3,
+      "name": "Pescado a la plancha",
+      "precio": 18,
+      "costo": 10
+    },
+    {
+      "id": 4,
+      "name": "Pollo al horno",
+      "precio": 15,
+      "costo": 8
+    },
+    {
+      "id": 5,
+      "name": "Risotto de champiñones",
+      "precio": 20,
+      "costo": 12
+    },
+    {
+      "id": 6,
+      "name": "Filete de ternera",
+      "precio": 25,
+      "costo": 15
+    },
+    {
+      "id": 7,
+      "name": "Pollo a la parrilla",
+      "precio": 15,
+      "costo": 8
+    },
+    {
+      "id": 8,
+      "name": "Hamburguesa de ternera",
+      "precio": 18,
+      "costo": 10
+    },
+    {
+      "id": 9,
+      "name": "Pescado al horno",
+      "precio": 20,
+      "costo": 12
+    },
+    {
+      "id": 10,
+      "name": "Paella",
+      "precio": 25,
+      "costo": 15
+    }
   ]
 }

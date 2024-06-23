@@ -35,7 +35,7 @@ export class RestaurantListComponent implements OnInit{
     });
   }
 
-  navigateToMenuList(restaurantId: number) {
+  navigateToMenuList(restaurantId: string) {
     this.router.navigate([`/restaurants/${restaurantId}/menus`]);
   }
 

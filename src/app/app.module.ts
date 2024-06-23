@@ -6,14 +6,14 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { FooterContentComponent } from './public/components/footer-content/footer-content.component';
 import { SideNavigatorBarComponent } from './public/components/side-navigator-bar/side-navigator-bar.component';
-import {MatButton} from "@angular/material/button";
+import {MatButton, MatIconButton} from "@angular/material/button";
 
 import {MatDrawer, MatDrawerContainer} from "@angular/material/sidenav";
 import {MatSidenavModule} from '@angular/material/sidenav';
 
 import {MatCardModule} from "@angular/material/card";
 import {RestaurantListComponent} from "./planning/components/restaurant-list/restaurant-list.component";
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { MenuListComponent } from './planning/components/menu-list/menu-list.component';
 import {RouterModule} from "@angular/router";
 import {PlanSubscriptionComponent} from "./subscription/pages/plan-subscription/plan-subscription.component";
@@ -26,15 +26,20 @@ import { ProfileUpdateComponent } from './profile/pages/profile-update/profile-u
 
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatIcon} from "@angular/material/icon";
 import { HistoryOrderComponent } from './execution/components/history-order/history-order.component';
 import { MadeOrderComponent } from './execution/pages/made-order/made-order.component';
 import {MatToolbar} from "@angular/material/toolbar";
 import {MatBadgeModule} from "@angular/material/badge";
 import { HomeComponent } from './public/components/home/home.component';
-import { LoginComponent } from './profile/components/login/login.component';
-import { RegisterComponent } from './profile/components/register/register.component';
+import { SignUpComponent } from './iam/pages/sign-up/sign-up.component';
+import { AuthLayoutComponent } from './iam/pages/auth-layout/auth-layout.component';
+import { SignInComponent } from './iam/pages/sign-in/sign-in.component';
+import {MatButtonToggle, MatButtonToggleGroup} from "@angular/material/button-toggle";
+import {AuthInterceptor} from "./iam/pages/sign-in/auth.interceptor";
+import { ProductsAddComponent } from './planning/pages/products-add/products-add.component';
+import {MatOption, MatSelect} from "@angular/material/select";
 
 
 @NgModule({
@@ -51,7 +56,10 @@ import { RegisterComponent } from './profile/components/register/register.compon
     HistoryOrderComponent,
     MadeOrderComponent,
     HomeComponent,
-
+    SignUpComponent,
+    AuthLayoutComponent,
+    SignInComponent,
+    ProductsAddComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,10 +80,19 @@ import { RegisterComponent } from './profile/components/register/register.compon
     MatInput,
     MatToolbar,
     MatBadgeModule,
-    LoginComponent,
-    RegisterComponent,
+    MatButtonToggle,
+    MatButtonToggleGroup,
+    MatIconButton,
+    ReactiveFormsModule,
+    MatSelect,
+    MatOption,
   ],
   providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    },
     provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]

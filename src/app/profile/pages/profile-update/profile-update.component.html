@@ -1,42 +1,42 @@
 <div class="profile-section">
   <div class="container-profile">
-
     <div class="form">
       <h1 style="font-weight: bold; font-size: 3rem;">My Profile</h1>
       <form class="example-form">
         <mat-form-field class="example-full-width">
-          <mat-label>Nombre</mat-label>
-          <input matInput placeholder="nombre"  [(ngModel)]="user.name" value="{{user.name}}"  name="name">
+          <mat-label>Company Name</mat-label>
+          <input matInput placeholder="nombre" [(ngModel)]="user.name" name="name">
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
-          <mat-label>Last Name</mat-label>
-          <input matInput placeholder="last name"  [(ngModel)]="user.lastName"  value="{{user.lastName}}" name="lastName">
+          <mat-label>Address</mat-label>
+          <input matInput placeholder="direccion" [(ngModel)]="user.address" name="address">
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
-          <mat-label>Direccion</mat-label>
-          <input matInput placeholder="direccion" [(ngModel)]="user.address" value="{{user.address}}" name="address" >
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
-          <mat-label>Telephone</mat-label>
-          <span matTextPrefix>+51 &nbsp;</span>
-          <input type="tel" matInput placeholder="555-555-1234" value="{{user.phone}}" [(ngModel)]="user.phone" name="phone" >
-          <mat-icon matSuffix>mode_edit</mat-icon>
+          <mat-label>Schedule</mat-label>
+          <input matInput placeholder="direccion" [(ngModel)]="user.schedule" name="schedule">
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
           <mat-label>Email</mat-label>
-          <input type="email" matInput  placeholder="Ex. pat@example.com" value="{{user.email}}" [(ngModel)]="user.email" name="email" >
+          <input type="email" matInput placeholder="Ex. pat@example.com" [(ngModel)]="user.email" name="email">
         </mat-form-field>
 
         <button mat-raised-button (click)="updateProfile()" style="height: 55px; width: 100%; background-color: #E74C3C">Guardar</button>
       </form>
     </div>
     <div class="images">
-      <img [src]="uploadedImageSrc" >
-      <input type="file" (change)="onFileSelected($event)" >
+      <label class="label-text">Imagen</label>
+      <img [src]="selectedImage" style="height: 200px; width: 200px; border-radius: 50%; margin-top: 10px;">
+      <mat-form-field style="height: 70px; width: 400px; margin-top: 5px;">
+        <mat-select placeholder="Selecciona una imagen" [(value)]="selectedImage">
+          <mat-option *ngFor="let image of images" [value]="image.imageUrl">
+            {{ image.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
     </div>
   </div>
 </div>
+

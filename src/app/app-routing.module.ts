@@ -6,9 +6,14 @@ import {PlanSubscriptionComponent} from "./subscription/pages/plan-subscription/
 import {ProfileUpdateComponent} from "./profile/pages/profile-update/profile-update.component";
 import {MadeOrderComponent} from "./execution/pages/made-order/made-order.component";
 import {HomeComponent} from "./public/components/home/home.component";
-import {LoginComponent} from "./profile/components/login/login.component";
-import {RegisterComponent} from "./profile/components/register/register.component";
+import {SignUpComponent} from "./iam/pages/sign-up/sign-up.component";
+import {SignInComponent} from "./iam/pages/sign-in/sign-in.component";
+import {ProductsAddComponent} from "./planning/pages/products-add/products-add.component";
 
+const authRoutes: Routes = [
+  {path:'login',component:SignInComponent},
+  {path:'register',component:SignUpComponent}
+];
 
 const routes: Routes = [
 
@@ -18,14 +23,16 @@ const routes: Routes = [
   {path:'profile',component:ProfileUpdateComponent},
   {path:'history',component:MadeOrderComponent},
   {path:'home',component:HomeComponent},
-  {path:'login',component:LoginComponent},
-  {path:'register',component:RegisterComponent},
-  {path:'**',component:HomeComponent},
-  {path:'',redirectTo:'/subscription',pathMatch:'full'}
+  {path:'register',component:SignUpComponent},
+  {path:'login',component:SignInComponent},
+  {path:'add-products',component:ProductsAddComponent},
+  { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
 
+
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),RouterModule.forRoot(authRoutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ProfileService} from "../../services/profile.service";
 import {User} from "../../model/user.entity";
+import {ImageService} from "../../../shared/services/image.service";
 
 @Component({
   selector: 'app-profile-update',
@@ -8,17 +9,19 @@ import {User} from "../../model/user.entity";
   styleUrl: './profile-update.component.css'
 })
 export class ProfileUpdateComponent implements OnInit{
+  user: User = {} as User;
+  images: any[] = [];
+  selectedImage: string | undefined;
+  profileId: string | null = '';
 
-  user:User= {} as User;
-  uploadedImageSrc: string | undefined;
-
-  constructor(private profileService: ProfileService){
+  constructor(private profileService: ProfileService, private imageService: ImageService) {
+    this.profileId = localStorage.getItem('profileId');
   }
 
   ngOnInit(): void {
     console.log("Iniciando la perfil de usuario");
-    this.getProfileById(1)
-
+    this.getProfileById(Number(this.profileId));
+    this.loadImages();
   }
 
   getProfileById(profileId: number) {
@@ -26,38 +29,27 @@ export class ProfileUpdateComponent implements OnInit{
       console.log("Response", response);
       this.user = response;
       console.log("User", this.user);
-      this.uploadedImageSrc = this.user.urlToImage;
-      console.log("Imagen", this.uploadedImageSrc);
+      this.selectedImage = this.user.urlToImage;
+      console.log("Imagen", this.selectedImage);
     });
   }
 
   updateProfile() {
-    let profileToUpdate = this.user;
-    this.profileService.update(this.user.id, profileToUpdate).subscribe(
-      (response : any)=> {
+    let profileToUpdate = {
+      ...this.user,
+      img: this.selectedImage
+    };
+    this.profileService.update(Number(this.profileId), profileToUpdate).subscribe(
+      (response: any) => {
         console.log("Response", response);
-      });
+      }
+    );
   }
 
-  /*Manejo de imagenes locales*/
-  onFileSelected(event:any){
-    if (event.target.files && event.target.files[0]) {
-      const file = event.target.files[0];
-
-      // Crear un FileReader para leer el contenido del archivo
-      const reader = new FileReader();
-
-      reader.onload = (e) => {
-        // El resultado del FileReader será una URL de datos que representa el archivo
-        const dataUrl = reader.result;
-        if (typeof dataUrl === 'string') {
-          localStorage.setItem('uploadedImage', dataUrl);
-          this.uploadedImageSrc = dataUrl;
-        }
-      };
-      // Leer el contenido del archivo como una URL de datos
-      reader.readAsDataURL(file);
-    }
+  loadImages() {
+    this.imageService.getProfileImages().subscribe((response: any[]) => {
+      this.images = response;
+    });
   }
 
 }

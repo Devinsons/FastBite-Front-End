@@ -1,24 +1,20 @@
 
-
 <div class="section">
   <div class="card-container">
     <h1 style="font-size: 2rem; font-weight: bold; margin-right: 50rem; margin-left: 50rem; margin-top: 3rem">Restaurants</h1>
     <mat-card class="card" *ngFor="let restaurant of restaurants">
       <mat-card-content class="card-content">
-        <img   mat-card-avatar  mat-card-image [src]="restaurant.urlToImage" [alt]="restaurant.name">
+        <img   mat-card-avatar  mat-card-image [src]="restaurant.image" [alt]="restaurant.name">
         <div class="card-data">
           <mat-card-title class="card-titulo">{{restaurant.name}}</mat-card-title>
           <p>Direccion:{{restaurant.address}}</p>
-          <p>Phone:{{restaurant.phone}}</p>
           <p> Email: {{restaurant.email}}</p>
           <p> Horario: {{restaurant.schedule}}</p>
           <mat-card-actions>
-            <button class="button-color" mat-button (click)="navigateToMenuList(restaurant.id)" >Selecionar</button>
+            <button class="button-color" mat-button (click)="navigateToMenuList(restaurant.acmeRestaurantRecordId)" >Selecionar</button>
           </mat-card-actions>
         </div>
-
       </mat-card-content>
-
     </mat-card>
   </div>
 </div>

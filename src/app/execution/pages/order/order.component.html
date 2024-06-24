@@ -1,0 +1,13 @@
+<div style="display: flex; align-items: center; justify-content: center; background-color: #F9D8D3">
+  <div class="container">
+    <mat-card class="order" *ngFor="let order of orders">
+      <mat-card-content>
+        <li>#ID Order: {{ order.orderId }}</li>
+        <li>Company ID: {{ order.companyId }}</li>
+        <li>Status: {{ order.orderStatus }}</li>
+        <li>Fecha: {{ order.createdAt | date }}</li>
+        <button mat-raised-button color="primary" (click)="statusChange(order)">Edit</button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

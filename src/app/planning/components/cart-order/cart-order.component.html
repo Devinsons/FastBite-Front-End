@@ -1,0 +1,13 @@
+<div>
+  <h1>List Order</h1>
+  <mat-list>
+    <mat-list-item *ngFor="let product of products;let indice=index" >
+      <img [src]="product.image" style="width: 50px">
+      <span matListItemTitle>{{product.name}}</span>
+      <span matListItemLine>{{product.type}}</span>
+      <input  placeholder="Cantidad" [(ngModel)]="product.quantity" >
+      <button mat-button color="warn" (click)="removeProduct(product)">Remove</button>
+    </mat-list-item>
+  </mat-list>
+  <button mat-raised-button color="primary" (click)="saveOrder()">Save Order</button>
+</div>

@@ -1,0 +1,30 @@
+
+<div class="fondo">
+  <mat-card class="login-section">
+    <div class="a">
+      <div class="b">
+        <div class="c">
+          <p class="d">FastBite</p>
+          <p class="e"></p>
+        </div>
+      </div>
+      <div class="f">
+        <div class="g">
+          <mat-icon>person</mat-icon>
+          <input class="i" matInput placeholder="UsuarioName" #user required>
+        </div>
+        <div class="g">
+          <mat-icon>lock</mat-icon>
+          <input class="i" matInput placeholder="Contraseña" type="password" #password>
+        </div>
+        <div class="j">
+          <button class="k" mat-stroked-button (click)="onLoginClick(user.value, password.value);">Ingresar</button>
+          <button class="k" mat-stroked-button (click)="onRegisterClick()">Registrar</button>
+        </div>
+        <div class="l">
+          <button class="km" mat-button (click)="onChangePasswordClick()">¿Olvidaste tu contraseña?</button>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+</div>

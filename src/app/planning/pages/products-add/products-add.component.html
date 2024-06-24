@@ -1,0 +1,57 @@
+<mat-card class="register-section">
+  <mat-toolbar class="top-bar">
+    <div class="toolbar-left">
+      <mat-icon class="back-icon" aria-hidden="false" aria-label="Back Icon">arrow_back_ios</mat-icon>
+      <span>ADD Products</span>
+    </div>
+    <div class="toolbar-middle-space"></div>
+    <div class="toolbar-right"></div>
+  </mat-toolbar>
+  <div class="section-body">
+    <div class="container">
+      <div class="content">
+        <mat-card class="information-card">
+          <mat-card-content>Registrate en nuestra plataforma para acceder a todos nuestros beneficios</mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <form [formGroup]="addedProductForm">
+        <div style="gap: 1.5rem; display: flex; align-content: center; justify-content: center; align-items: center;">
+          <label class="label-text">Tipo de Producto</label>
+          <div>
+            <mat-button-toggle-group class="toggle-group" name="userType" aria-label="User Type" formControlName="type">
+              <mat-button-toggle value="ENTRADA">Entrada</mat-button-toggle>
+              <mat-button-toggle value="ALMUERZO">Almuerzo</mat-button-toggle>
+              <mat-button-toggle value="BEBIDA">Bebida</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+
+        <label class="label-text">Nombre del Producto</label>
+        <mat-form-field style="height: 70px; width: 400px; margin-top: 5px;">
+          <input matInput placeholder="Ingresa el nombre del producto" formControlName="name">
+        </mat-form-field>
+
+        <label class="label-text">Descripción</label>
+        <mat-form-field style="height: 70px; width: 400px; margin-top: 5px;">
+          <input matInput placeholder="Descripción del producto" formControlName="description">
+        </mat-form-field>
+
+        <label class="label-text">Imagen</label>
+        <mat-form-field style="height: 70px; width: 400px; margin-top: 5px;">
+          <mat-select placeholder="Selecciona una imagen" formControlName="image" (selectionChange)="selectedImage = $event.value">
+            <mat-option *ngFor="let image of images" [value]="image.imageUrl">
+              {{ image.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+      </form>
+
+      <button mat-stroked-button (click)="addProduct()" class="button_register">Añadir Producto</button>
+
+    </div>
+  </div>
+</mat-card>

@@ -1,0 +1,74 @@
+<mat-card class="register-section">
+  <mat-toolbar class="top-bar">
+    <div class="toolbar-left">
+      <mat-icon class="back-icon" aria-hidden="false" aria-label="Back Icon" (click)="onIconClick()">arrow_back_ios</mat-icon>
+      <span>Register</span>
+    </div>
+    <div class="toolbar-middle-space"></div>
+    <div class="toolbar-right">
+    </div>
+  </mat-toolbar>
+  <div class="section-body">
+    <div class="container">
+      <div class="content">
+        <mat-card class="information-card">
+          <mat-card-content>Registrate en nuestra plataforma para acceder a todos nuestros beneficios</mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <form [formGroup]="registerForm">
+        <div style="gap: 1.5rem; display: flex; align-content: center; justify-content: center; align-items: center;">
+          <label class="label-text">Registrarse como</label>
+          <div>
+            <mat-button-toggle-group class="toggle-group" name="userType" aria-label="User Type" formControlName="Role">
+              <mat-button-toggle value="ROLE_COMPANY">Company</mat-button-toggle>
+              <mat-button-toggle value="ROLE_RESTAURANT">Restaurant</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+        </div>
+
+
+        <label class="label-text">Company Name</label>
+        <mat-form-field style="height: 70px; width: 400px; margin-top: 5px;">
+          <input matInput placeholder="Ingresa el nombre de tu restaurant o empresa" formControlName="Name" >
+        </mat-form-field>
+
+        <label class="label-text">Email</label>
+        <mat-form-field style="height: 70px; width: 400px; margin-top: 5px;">
+          <input matInput placeholder="pat@example.com" formControlName="Email">
+        </mat-form-field>
+
+        <label class="label-text">Address</label>
+        <mat-form-field style="height: 70px; width: 400px; margin-top: 5px;" >
+          <input matInput placeholder="address" formControlName="Address">
+        </mat-form-field>
+
+        <label class="label-text">Schedule</label>
+        <mat-form-field style="height: 70px; width: 400px; margin-top: 5px;">
+          <input matInput placeholder="ingresa tu schedule" formControlName="Schedule">
+        </mat-form-field>
+
+        <label class="label-text">Username</label>
+        <mat-form-field style="height: 70px; width: 400px; margin-top: 5px;" >
+          <input matInput placeholder="Username" formControlName="Username">
+        </mat-form-field>
+
+        <label class="label-text">Contraseña</label>
+        <mat-form-field style="height: 70px; width: 400px; margin-top: 5px;">
+
+          <input matInput [type]="hide ? 'password' : 'text'" placeholder="SecretPassword" formControlName="Password">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+
+      </form>
+
+      <button mat-stroked-button (click)="register()" class="button_register">Register</button>
+
+    </div>
+  </div>
+
+</mat-card>

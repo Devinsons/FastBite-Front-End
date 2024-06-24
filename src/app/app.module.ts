@@ -42,6 +42,7 @@ import { ProductsAddComponent } from './planning/pages/products-add/products-add
 import {MatOption, MatSelect} from "@angular/material/select";
 import { CartOrderComponent } from './planning/components/cart-order/cart-order.component';
 import {MatList, MatListItem} from "@angular/material/list";
+import { OrderComponent } from './execution/pages/order/order.component';
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import {MatList, MatListItem} from "@angular/material/list";
     SignInComponent,
     ProductsAddComponent,
     CartOrderComponent,
+    OrderComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import {HomeComponent} from "./public/components/home/home.component";
 import {SignUpComponent} from "./iam/pages/sign-up/sign-up.component";
 import {SignInComponent} from "./iam/pages/sign-in/sign-in.component";
 import {ProductsAddComponent} from "./planning/pages/products-add/products-add.component";
+import {OrderComponent} from "./execution/pages/order/order.component";
 
 const authRoutes: Routes = [
   {path:'login',component:SignInComponent},
@@ -26,6 +27,7 @@ const routes: Routes = [
   {path:'register',component:SignUpComponent},
   {path:'login',component:SignInComponent},
   {path:'add-products',component:ProductsAddComponent},
+  {path:'orders',component:OrderComponent},
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login' }
 ];

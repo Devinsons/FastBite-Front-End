@@ -1,10 +1,42 @@
 [
   {
-    "name": "amazon",
-    "imageUrl": "data:image/png;base64,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"
+    "name": "restaurant-elite",
+    "imageUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/88216f169006445.644577a1602b4.png"
   },
   {
-    "name": "pepe",
-    "imageUrl": "https://s.yimg.com/ny/api/res/1.2/2gtD4Lvy7QtuPT_ARY1vMw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://s.yimg.com/os/creatr-uploaded-images/2022-12/b04296e0-7662-11ed-bb5d-a96161bc87a1"
+    "name": "restaurant-citrico",
+    "imageUrl": "https://www.zarla.com/images/zarla-citri-co-1x1-2400x2400-20220118-y6gdm3xjwh4jjcrq3whx.png?crop=1:1,smart&width=250&dpr=2"
+  },
+  {
+    "name": "restaurant-ahumado",
+    "imageUrl": "https://marketplace.canva.com/EADiIIVxcT4/2/0/1600w/canva-negro-la-corteza-restaurante-logo-o6NfZ-Gk69A.jpg"
+  },
+  {
+    "name": "restaurant-sopa",
+    "imageUrl":"https://marketplace.canva.com/EAEvM-nriQ8/1/0/1600w/canva-logo-amarillo-y-marr%C3%B3n-con-ilustraci%C3%B3n-sobre-restaurante-tNe83rq2JXo.jpg"
+  },
+  {
+    "name": "restaurant-rojo",
+    "imageUrl":"https://marketplace.canva.com/EAF8OQTDry0/1/0/1600w/canva-logo-restaurante-circular-blanco-y-negro-yoLE4F7rTeQ.jpg"
+  },
+  {
+    "name": "restaurant-room",
+    "imageUrl":"https://design-assets.adobeprojectm.com/content/download/express/public/urn:aaid:sc:VA6C2:496a1da5-fc11-557d-a8cd-fb73dfee88c4/component?assetType=TEMPLATE&etag=d2f5456a4f8244ada45e56ccc8e6a7d9&revision=338e9f1e-a2e4-45a2-8c1a-aebc34faf724&component_id=31e6553c-7006-44d4-87ff-a1165bc0ebd4"
+  },
+  {
+    "name": "restaurant-franc",
+    "imageUrl": "https://marketplace.canva.com/EAFEdgGFIr4/1/0/400w/canva-logotipo-mantel-rojo-restaurante-cocina-francesa-elegante-njtHuRcQzqQ.jpg"
+  },
+  {
+    "name": "company-lg",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqrA_JvNZwqFzomOWGolHMWfPhlakPm4FJzQ&s"
+  },
+  {
+    "name": "company-constructor",
+    "imageUrl": "https://www.zarla.com/images/zarla-logro-comercial-1x1-2400x2400-20220202-www4ychwq9jwvrchmkf4.png?crop=1:1,smart&width=250&dpr=2"
+  },
+  {
+    "name": "company-pepe",
+    "imageUrl": "https://s1.coincarp.com/logo/1/pepe-coin-bsc.png?style=200"
   }
 ]

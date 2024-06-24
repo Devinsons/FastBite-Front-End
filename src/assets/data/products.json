@@ -1,10 +1,62 @@
 [
   {
     "name": "lomo",
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMciANgljbiewwrCNGGNK_5W67pNGrpy8efw&s"
+    "imageUrl": "https://imgmedia.buenazo.pe/1200x660/buenazo/original/2022/06/20/62aea00d119a8801813a563b.jpg"
   },
   {
-    "name": "flickr",
-    "imageUrl": "https://www.flickr.com/photos/robertofiuza/"
+    "name": "ceviche",
+    "imageUrl": "https://www.elespectador.com/resizer/tyGJPN_YmWpagQFeXq_YYOxAKjY=/arc-anglerfish-arc2-prod-elespectador/public/2AVD5Z6Y2ZFWHETPQGCPLMNK4A.jpg"
+  },
+  {
+    "name": "arroz con pollo",
+    "imageUrl": "https://buenazo.cronosmedia.glr.pe/original/2022/10/24/60d89da6913c240e6725db08.jpg"
+  },
+  {
+    "name": "tallarines",
+    "imageUrl": "https://elcomercio.pe/resizer/c-a5HfyhpXUtirIx5R290y5Io98=/980x528/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/2XAQHTATIVBUVGNMF737X6SV4E.jpg"
+  },
+  {
+    "name": "chaufa",
+    "imageUrl": "https://www.paulinacocina.net/wp-content/uploads/2021/12/arroz-chaufa-peruano-receta.jpg"
+  },
+  {
+    "name": "pavita",
+    "imageUrl": "https://cde.laprensa.e3.pe/ima/0/0/2/3/6/236898/691x430.jpg"
+  },
+  {
+    "name": "aji de gallina",
+    "imageUrl": "https://www.gourmet.cl/wp-content/uploads/2016/09/Aji-Gallina-web-570x458.jpg"
+  },
+  {
+    "name": "limonada",
+    "imageUrl": "https://www.comedera.com/wp-content/uploads/2022/04/Limonada-shutterstock_379385302.jpg"
+  },
+  {
+    "name": "jugo naranja",
+    "imageUrl": "https://assets.elgourmet.com/wp-content/uploads/2023/03/diccio_640.jpg.webp"
+  },
+  {
+    "name": "jugo maracuya",
+    "imageUrl": "https://agraria.pe/imgs/a/lx/exportaciones-peruanas-de-jugo-de-maracuya-suman-us-44-millo-33531.jpg"
+  },
+  {
+    "name": "te",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdsFtJSuHsWD9X2aWYmXwe7VqNFfazhtX9FQ&s"
+  },
+  {
+    "name": "cerveza",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHxT6K0ZqWY-jW7J7_8-RcAC3cCutfB2RE2w&s"
+  },
+  {
+    "name": "sopa",
+    "imageUrl": "https://mojo.generalmills.com/api/public/content/GV8522mTj0-dK1Tn5cVGUA_gmi_hi_res_jpeg.jpeg?v=1e2269b0&t=16e3ce250f244648bef28c5949fb99ff"
+  },
+  {
+    "name": "ensalada",
+    "imageUrl": "https://www.comedera.com/wp-content/uploads/2021/12/ensalada-de-lechuga1.jpg"
+  },
+  {
+    "name": "causa",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkv9xrYGAziOQQESrodYADAUNOrS2nNm66HA&s"
   }
 ]

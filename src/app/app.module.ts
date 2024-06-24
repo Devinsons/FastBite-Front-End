@@ -40,6 +40,8 @@ import {MatButtonToggle, MatButtonToggleGroup} from "@angular/material/button-to
 import {AuthInterceptor} from "./iam/pages/sign-in/auth.interceptor";
 import { ProductsAddComponent } from './planning/pages/products-add/products-add.component';
 import {MatOption, MatSelect} from "@angular/material/select";
+import { CartOrderComponent } from './planning/components/cart-order/cart-order.component';
+import {MatList, MatListItem} from "@angular/material/list";
 
 
 @NgModule({
@@ -60,6 +62,7 @@ import {MatOption, MatSelect} from "@angular/material/select";
     AuthLayoutComponent,
     SignInComponent,
     ProductsAddComponent,
+    CartOrderComponent,
   ],
   imports: [
     BrowserModule,
@@ -86,6 +89,8 @@ import {MatOption, MatSelect} from "@angular/material/select";
     ReactiveFormsModule,
     MatSelect,
     MatOption,
+    MatListItem,
+    MatList,
   ],
   providers: [
     {

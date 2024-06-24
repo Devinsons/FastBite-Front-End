@@ -5,6 +5,8 @@ import {ActivatedRoute} from "@angular/router";
 import {Order} from "../../../execution/model/order.entity";
 import {ExecutionService} from "../../../execution/services/execution.service";
 import {ProductService} from "../../services/product.service";
+import {IProduct} from "../../model/IProduct";
+import {CartService} from "../../services/cart.service";
 @Component({
   selector: 'app-menu-list',
   templateUrl: './menu-list.component.html',
@@ -19,7 +21,8 @@ export class MenuListComponent implements  OnInit{
   constructor(
     private productService: ProductService,
     private route: ActivatedRoute,
-    private orderService: ExecutionService
+    private orderService: ExecutionService,
+    private cartService: CartService
   ) {}
 
   ngOnInit(): void {
@@ -39,21 +42,7 @@ export class MenuListComponent implements  OnInit{
     });
   }
 
-  onCardClick(product: Product) {
-    this.idOrder += 1;
-    const order = new Order(
-      this.idOrder,
-      product.name,
-      product.type,
-      '30 min',
-      'En proceso',
-      new Date(),
-      parseInt(this.route.snapshot.params['restaurantId']),
-      1
-    );
-    console.log('Order', order);
-    this.orderService.create(order).subscribe(response => {
-      console.log('Response', response);
-    });
+  onCardClick(product: IProduct) {
+    this.cartService.addNewProduct(product);
   }
 }
